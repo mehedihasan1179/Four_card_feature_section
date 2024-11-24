@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 6em;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+
+    .head{
+        max-width: 36em;
+        margin: 0 auto;
+        text-align: center;
+
+        .head-text{
+            font-weight: 200;
+            color: hsl(234, 12%, 34%);
+            font-size: 2.25em;
+        }
+
+        h2{
+            font-weight: 600;
+            color: hsl(234, 12%, 34%);
+            font-size: 2.25em;
+        }
+        
+        p{
+            max-width: 34em;
+            margin: 0 auto;
+            color: hsl(229, 6%, 66%);
+            font-size: 15px;
+            margin-top: 1.25em;
+            /* letter-spacing: -0.125em; */
+        }
+    }
+
+    .card-container{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+
+
+        
+
+        .cards{
+            width: 21vw;
+            height: 28vh;
+            position: relative;
+            /* border: 1px solid red; */
+            background-color: hsl(0, 0%, 100%);
+            padding: 2em;
+            border-radius: 0.875em;
+            box-shadow: 0 8px 16px rgba(77, 69, 69, 0.253);
+            /* border-top: 5px solid green; */
+
+            h3{
+                color: hsl(234, 12%, 34%);
+            }
+
+            p{
+                color: hsl(229, 6%, 66%);
+                margin-top: 0.85em;
+            }
+
+            img{
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+            }
+        } 
+
+        .card2{
+            display: flex;
+            gap: 1.5em;
+            flex-direction: column;
+
+            .card2-part1{
+                border-top: 0.375em solid hsl(0, 78%, 62%);
+            }
+
+            .card2-part2{
+                border-top: 0.375em solid hsl(34, 97%, 64%);
+            }
+        }
+
+        
+
+        .card00{
+            border-top: 0.375em solid hsl(212, 86%, 64%);
+        }
+
+        .card01{
+            border-top: 0.375em solid hsl(180, 62%, 55%);
+        }
+    }
+
+
+    /* .cyan{
+        width: 99%;
+        height: 0.875em;
+        background-color: red;
+        position: absolute;
+        top: 0%;
+        left: 2px;
+        overflow: hidden;
+        border-radius: 2em;
+    } */
+
+    footer{
+        margin-top: 1.25em;
+    }
+}
+
+
+/* mobile devices */
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    
+        .head{
+            max-width: 90vw;
+            margin: 0 auto;
+            text-align: center;
+    
+            .head-text{
+                font-weight: 200;
+                color: hsl(234, 12%, 34%);
+                font-size: 1.5em;
+            }
+    
+            h2{
+                font-weight: 600;
+                color: hsl(234, 12%, 34%);
+                font-size: 1.5em;
+            }
+            
+            p{
+                max-width: 80vw;
+                margin: 0 auto;
+                color: hsl(229, 6%, 66%);
+                font-size: 15px;
+                margin-top: 1.25em;
+                /* letter-spacing: -0.125em; */
+            }
+        }
+    
+        .card-container{
+            width: 100%;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            margin-top: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.5em;
+    
+    
+            
+    
+            .cards{
+                width: 90vw;
+                height: 30vh;
+                position: relative;
+                /* border: 1px solid red; */
+                background-color: hsl(0, 0%, 100%);
+                padding: 1em;
+                border-radius: 0.875em;
+                box-shadow: 0 8px 16px rgba(77, 69, 69, 0.253);
+                /* border-top: 5px solid green; */
+    
+                h3{
+                    color: hsl(234, 12%, 34%);
+                }
+    
+                p{
+                    color: hsl(229, 6%, 66%);
+                    margin-top: 0.85em;
+                    /* margin-bottom: 0.85em; */
+                    font-size: 14px;
+                }
+    
+                img{
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
+                }
+            } 
+    
+            .card2{
+                display: flex;
+                gap: 1.5em;
+                flex-direction: column;
+    
+                .card2-part1{
+                    border-top: 0.375em solid hsl(0, 78%, 62%);
+                }
+    
+                .card2-part2{
+                    border-top: 0.375em solid hsl(34, 97%, 64%);
+                }
+            }
+    
+            
+    
+            .card00{
+                border-top: 0.375em solid hsl(212, 86%, 64%);
+            }
+    
+            .card01{
+                border-top: 0.375em solid hsl(180, 62%, 55%);
+            }
+        }
+    
+    
+        /* .cyan{
+            width: 99%;
+            height: 0.875em;
+            background-color: red;
+            position: absolute;
+            top: 0%;
+            left: 2px;
+            overflow: hidden;
+            border-radius: 2em;
+        } */
+    }
+
+    footer{
+        margin-top: 1em;
+    }
+}    
+
+
+@media screen and (max-width: 720px) {
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    
+        .head{
+            max-width: 90vw;
+            margin: 0 auto;
+            text-align: center;
+    
+            .head-text{
+                font-weight: 200;
+                color: hsl(234, 12%, 34%);
+                font-size: 1.5em;
+            }
+    
+            h2{
+                font-weight: 600;
+                color: hsl(234, 12%, 34%);
+                font-size: 1.5em;
+            }
+            
+            p{
+                max-width: 80vw;
+                margin: 0 auto;
+                color: hsl(229, 6%, 66%);
+                font-size: 15px;
+                margin-top: 1.25em;
+                /* letter-spacing: -0.125em; */
+            }
+        }
+    
+        .card-container{
+            width: 100%;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            margin-top: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.5em;
+    
+    
+            
+    
+            .cards{
+                width: 90vw;
+                height: 30vh;
+                position: relative;
+                /* border: 1px solid red; */
+                background-color: hsl(0, 0%, 100%);
+                padding: 1em;
+                border-radius: 0.875em;
+                box-shadow: 0 8px 16px rgba(77, 69, 69, 0.253);
+                /* border-top: 5px solid green; */
+    
+                h3{
+                    color: hsl(234, 12%, 34%);
+                }
+    
+                p{
+                    color: hsl(229, 6%, 66%);
+                    margin-top: 0.85em;
+                    /* margin-bottom: 0.85em; */
+                    font-size: 14px;
+                }
+    
+                img{
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
+                }
+            } 
+    
+            .card2{
+                display: flex;
+                gap: 1.5em;
+                flex-direction: column;
+    
+                .card2-part1{
+                    border-top: 0.375em solid hsl(0, 78%, 62%);
+                }
+    
+                .card2-part2{
+                    border-top: 0.375em solid hsl(34, 97%, 64%);
+                }
+            }
+    
+            
+    
+            .card00{
+                border-top: 0.375em solid hsl(212, 86%, 64%);
+            }
+    
+            .card01{
+                border-top: 0.375em solid hsl(180, 62%, 55%);
+            }
+        }
+    
+    
+        /* .cyan{
+            width: 99%;
+            height: 0.875em;
+            background-color: red;
+            position: absolute;
+            top: 0%;
+            left: 2px;
+            overflow: hidden;
+            border-radius: 2em;
+        } */
+    }
+
+    footer{
+        margin-top: 1em;
+    }
+}    
+
+
+
